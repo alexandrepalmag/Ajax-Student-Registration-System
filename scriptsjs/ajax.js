@@ -3,6 +3,8 @@ function searchData() {
     let result = document.getElementById('jumbotron-person')
     let ajax = new XMLHttpRequest()
 
+    result.innerHTML = '<img src="img/loading_icon.jpg" width="120px">'
+
     ajax.open('GET', `main.php?search-name=${name}`, true)
 
     ajax.onreadystatechange = function() {
