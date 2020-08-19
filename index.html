@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg nav-person">
+        <a href="#" class="navbar-brand" id="brand-person">
+            SchoolMasterClass
+        </a>
+    </nav>
+    <div class="container-fluid">
+        <hr>
+        <div class="card">
+            <div class="card-header">
+                <h5>Search Students </h5>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div id="contact-search">
+                        <input type="text" name="search-name" id="search-name" class="form-control" placeholder="Type the name">
+                        <br>
+                        <button type="button" name="btnsearch" value="search-now" class="btn btn-success" onclick="searchData()">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br>
+        <div class="jumbotron jumbotron-fluid" id="jumbotron-person">
+            <div class="container">
+                <h2 class="display-8">Results</h2>
+    
+            </div>
+          </div>
+    </div>
+</body>
+<script src="scriptsjs/ajax.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+</html>
