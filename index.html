@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Students</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
 </head>
+
 <body>
     <nav class="navbar navbar-light navbar-expand-lg nav-person">
         <a href="#" class="navbar-brand" id="brand-person">
             SchoolMasterClass
         </a>
+        <nav class="nav nav-masthead justify-content-center">
+            <a href="index.html" class="btn btn-success">New student
+            </a>
+        </nav>
     </nav>
+    <br>
     <div class="container-fluid">
-        <hr>
         <div class="card">
-            <div class="card-header">
-                <h5>Search Students </h5>
-            </div>
             <div class="card-body">
-                <form>
+                <div class="container">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Search Students</p>
+                    </blockquote>
                     <div id="contact-search">
-                        <input type="text" name="search-name" id="search-name" class="form-control" placeholder="Type the name">
-                        <br>
-                        <button type="button" name="btnsearch" value="search-now" class="btn btn-success" onclick="searchData()">Search</button>
+                        <div class="input-group">
+                            <input type="text" name="search-name" id="search-name" class="form-control"
+                                placeholder="Type the name">
+                            <div class="input-group-append" id="button-addon4">
+                                <button type="button" name="btnsearch" value="search-now" class="btn btn-success"
+                                    onclick="searchData()">Search</button>
+                            </div>
+                        </div>
                     </div>
-                </form>
+                </div>
+                <br>
             </div>
         </div>
         <br>
         <div class="jumbotron jumbotron-fluid" id="jumbotron-person">
             <div class="container">
-    
             </div>
-          </div>
+        </div>
     </div>
 </body>
 <script src="scriptsjs/ajax.js"></script>
 <script src="lib/jquery/jquery.min.js"></script>
-<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
 </html>
